@@ -6,7 +6,9 @@
     "scripts": {
         "lint": "eslint \"cypress/e2e/**/*.js\" \"cypress/support/**/*.js\" cypress.config.js",
         "lint:fix": "eslint \"cypress/e2e/**/*.js\" \"cypress/support/**/*.js\" cypress.config.js --fix",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test:browser:edge": "cypress run --browser edge",
+        "test:tablet": "cypress run --config viewportWidth=768 viewportHeight=1024"
     },
     "author": "",
     "license": "ISC",
