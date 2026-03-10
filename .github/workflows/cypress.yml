@@ -36,7 +36,7 @@ jobs:
           cd web
           npm install
           npm start &     
-             
+
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
@@ -48,6 +48,7 @@ jobs:
           record: true
           parallel: true
           group: 'Cypress Tests'
+          
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
