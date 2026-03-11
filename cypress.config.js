@@ -8,6 +8,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: 'http://localhost:3000/',
     video: true,
     reporter: 'mochawesome',
     reporterOptions: {
@@ -17,6 +18,17 @@ module.exports = defineConfig({
       json: false,
       timestamp: "mmddyyyy_HHMMss"
     },
+
+    projectId: "o2edn8",
+    defaultCommandTimeout: 60000,
+    env:{
+      "email": "clinica@gmail.com",
+      "senha": "4321",
+      "api_login": "http://localhost:8080/auth/login",
+      "api_clinica": "http://localhost:8080/clinica",
+      "api_especialista": "http://localhost:8080/especialista",
+      "requestMode": true
+    }
 
   },
 
